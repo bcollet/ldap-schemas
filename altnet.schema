@@ -34,11 +34,6 @@ attributetype ( 1.3.6.1.4.1.39196.2.1.7 NAME 'mailRelayed'
   EQUALITY booleanMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.7 SINGLE-VALUE )
 
-attributetype ( 1.3.6.1.4.1.39196.2.1.10 NAME 'mailRelay'
-  DESC 'A boolean value directing postfix to relay mail for this domain'
-  EQUALITY booleanMatch
-  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7 SINGLE-VALUE )
-
 attributetype ( 1.3.6.1.4.1.39196.2.1.8 NAME 'mailAcceptingAddressPrimary'
   DESC 'RFC822 primary email address of this recipient'
   EQUALITY caseIgnoreIA5Match
@@ -46,6 +41,11 @@ attributetype ( 1.3.6.1.4.1.39196.2.1.8 NAME 'mailAcceptingAddressPrimary'
 
 attributetype ( 1.3.6.1.4.1.39196.2.1.9 NAME 'mailHosted'
   DESC 'A boolean value indicated postfix that mail for this domain is hosted locally'
+  EQUALITY booleanMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7 SINGLE-VALUE )
+
+attributetype ( 1.3.6.1.4.1.39196.2.1.10 NAME 'mailRelay'
+  DESC 'A boolean value directing postfix to relay mail for this domain'
   EQUALITY booleanMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.7 SINGLE-VALUE )
 
